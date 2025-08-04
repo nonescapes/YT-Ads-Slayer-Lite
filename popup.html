@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Ads Slayer Lite</title>
+    <style>
+        /* --- 基本樣式重設與設定 (淺色主題) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* 純白背景 */
+            color: #1f2937; /* 深灰色文字，比純黑更柔和 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* 使用系統預設字體，達到輕量化 */
+            width: 220px; /* 設定彈出視窗的固定寬度 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* --- 主容器樣式 --- */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 水平置中 */
+            justify-content: center; /* 垂直置中 */
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        /* --- 圖示樣式 --- */
+        .icon-container {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 15px;
+        }
+
+        /* --- SVG 圖示樣式 --- */
+        .icon-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- 標題樣式 --- */
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        /* --- 狀態描述樣式 --- */
+        .status {
+            font-size: 13px;
+            color: #6b7280; /* 使用中灰色，增加層次感 */
+            margin: 0;
+        }
+
+        /* --- 分隔線 --- */
+        .divider {
+            border: none;
+            height: 1px;
+            width: 90%;
+            background-color: #e5e7eb; /* 淺灰色分隔線 */
+            margin: 15px 0;
+        }
+
+        /* --- 版本號樣式 --- */
+        .version {
+            font-size: 11px;
+            color: #9ca3af; /* 較淺的灰色 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 模仿您提供的圖示風格的內嵌 SVG (已改為黑色) -->
+        <div class="icon-container">
+            <svg class="icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20,15 H80 C88.28,15 95,21.72 95,30 V70 C95,78.28 88.28,85 80,85 H20 C11.72,85 5,78.28 5,70 V30 C5,21.72 11.72,15 20,15 Z" stroke="black" stroke-width="6" stroke-linejoin="round"/>
+                <path d="M40,35 L60,50 L40,65 V35 Z" fill="black"/>
+                <path d="M10 90 L90 10" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <!-- 擴充套件名稱 -->
+        <h1 id="title" class="title">YT Ads Slayer Lite</h1>
+
+        <!-- 狀態訊息 -->
+        <p id="status" class="status">廣告攔截已啟用</p>
+
+        <!-- 分隔線 -->
+        <hr class="divider">
+
+        <!-- 版本號 (將版本號與文字分開，方便翻譯) -->
+        <p id="version" class="version">版本 1.1.1</p>
+    </div>
+
+    <!-- 引用外部 JavaScript 檔案 -->
+    <script src="popup.js"></script>
+
+</body>
+</html>
