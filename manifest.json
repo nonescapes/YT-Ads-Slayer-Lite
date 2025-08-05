@@ -2,14 +2,23 @@
   "manifest_version": 3,
   "name": "__MSG_extName__",
   "description": "__MSG_extDesc__",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "default_locale": "en",
   "icons": {
     "128": "icon.png"
   },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": "icon2.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

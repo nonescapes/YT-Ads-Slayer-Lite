@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "YT Ads Slayer Lite",
+    "description": "The name of the extension."
+  },
+  "extDesc": {
+    "message": "An extremely lightweight (only 20KB) YouTube™ ad removal extension.",
+    "description": "The description of the extension."
+  }
+}

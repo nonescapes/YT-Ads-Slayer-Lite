@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "YT Ads Slayer Lite",
+    "description": "擴充功能的名稱。"
+  },
+  "extDesc": {
+    "message": "一個只有20KB，極度輕量的 YouTube™ 廣告移除插件。",
+    "description": "擴充功能的描述。"
+  }
+}
